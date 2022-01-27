@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-Ddevice-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link[rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
   </head>
+
   <body>
     <div class="card">
       <div class="search">
-        <input type="text" class="search-bar" />
+        <input type="text" class="search-bar" placeholder="Search" />
         <button>
           <svg
             stroke="currentColor"
@@ -26,13 +33,16 @@
             ></path>
           </svg>
         </button>
-        <div class="weather">
-            <h2 class="city">Weather in Denver</h2>
-            <div class="temp">51°C</div>
-            <img src="" alt="" class="icon" />
-            <div class="description">Cloudy</div>
-            <div class="humidity">Humidity: 60%</div>
-            <div class="wind">Wind speed: 6.2 km/h</div>
+      </div>
+      <div class="weather">
+        <h2 class="city">Weather in Denver</h2>
+        <h1 class="temp">51°C</h1>
+        <div class="flex">
+          <img src="" alt="" class="icon" />
+          <div class="description">Cloudy</div>
+        </div>
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6.2 km/h</div>
       </div>
     </div>
   </body>
