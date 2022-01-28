@@ -24,6 +24,7 @@ let weather = {
       "Humidity: " + humidity + "%";
     document.querySelector(".wind").innerText =
       "Wind Speed: " + speed + " km/h";
+    document.querySelector(".weather").classList.remove("loading");
     document.body.style.backgroundImage =
       "url('https://source.unsplash.com/1920x1080/?" + name + "')";
   },
@@ -35,3 +36,5 @@ let weather = {
 document.querySelector(".search button").addEventListener("click", function () {
   weather.search();
 });
+
+weather.fetchWeather("Tokyo");
